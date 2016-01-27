@@ -1,0 +1,32 @@
+doctype
+html.no-js
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Lee Theobald
+    meta(name='description', content='The personal website of Lee Theobald, a developer from Cambridge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='styles/main.css')
+  body
+    
+    header
+      h1 Lee Theobald
+      p.
+        Hi! I'm Lee, a Lead Java Developer at #[a(href="http://ww.openobjects.com", title="Open Objects") Open Objects].
+        You can find me on #[a(href="https://www.twitter.com/leesy", title="@Leesy on Twitter") Twitter] or #[a(href="https://www.facebook.com/ltheobald", title="Lee Theobald on Facebook") Facebook],
+        My code can be found on #[a(href="https://github.com/LTheobald", title="LTheobald on Github") Github] and my photos can be found on #[a(href="http://www.flickr.com/people/lthbld", title="Lee Theobald on Flickr") Flickr].
+    
+    nav
+      ul
+        li Blog
+        li About
+        li Search
+        
+    section#main-content    
+      != yield
+      
+    footer
+      p Footer!
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
